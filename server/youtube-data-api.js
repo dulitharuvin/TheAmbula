@@ -1,9 +1,12 @@
 /**
  * Created by Dulitha RD on 11/9/2016.
  */
-import { HTTP } from 'meteor/http';
+import {HTTP} from 'meteor/http';
 
-var Future = Npm.require( 'fibers/future' );
+var Future = Npm.require('fibers/future');
+
+var cloudinary = require('cloudinary');
+
 
 /**
  * Replace this with your target API or use the API URLs directly in the methods below.
@@ -19,7 +22,7 @@ Meteor.methods({
      *
      * @returns the data returned from the API.
      */
-    simpleGetData: function() {
+    simpleGetData: function () {
         var response = HTTP.get(baseUrl);
         return response.data;
     },
@@ -29,7 +32,7 @@ Meteor.methods({
      * @param param - the parameter to append
      * @returns the data returned from the API
      */
-    getWithParameter: function(param) {
+    getWithParameter: function (param) {
         // Create our future instance.
         var future = new Future();
 
@@ -43,5 +46,15 @@ Meteor.methods({
         });
         return future.wait();
 
-    }
+    },
+
+    uploadVideoCloud: function (file) {
+        // Cloudinary.uploader.upload(file, function (err, res) {
+        //     console.log(err);
+        //     console.log(res);
+        // });
+        cloudinary.uploader.upload(file, function (result) {
+            console.log(result)
+        });
+    },
 });

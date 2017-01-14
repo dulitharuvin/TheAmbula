@@ -16,7 +16,7 @@
     color: #a94442;
 }
 
-#cancel, #submit, #deleteBtn, #cancelBtn, .form-footer-btn {
+#cancel, #submit, #deleteBtn, #cancelBtn, .form-footer-btn, #uploadBtn, #uploadBtn {
     width: 10em;
 }
 
@@ -52,7 +52,7 @@ select option:first-child {
     text-decoration: none;
 }
 
-a.mdl-button{
+a.mdl-button {
     color: #000000;
 }
 
@@ -71,27 +71,28 @@ a.mdl-button{
     padding-top: 6px;
 }
 
-.heart-full{
-    color:#D1242F;
+.heart-full {
+    color: #D1242F;
 }
+
 /*//////////////////single-post-stat-view styles////////////////*/
-.single-post-stat-view{
+.single-post-stat-view {
     margin: 5px 15px;
 }
 
 /*///////Recipe Video Adding Toggle Option Related styles///////*/
 
-#recipeAddOptionToggle{
+#recipeAddOptionToggle {
     padding: 0px 15px;
 }
 
-.nav-pills > li > a{
+.nav-pills > li > a {
     color: #000000;
     text-transform: uppercase;
-    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
     color: #fff;
-    background-color: rgb(121,85,72);
+    background-color: rgb(121, 85, 72);
 }

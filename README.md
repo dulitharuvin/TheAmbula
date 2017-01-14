@@ -29,3 +29,6 @@ Fontawesome official icon pack added
 
 WYSIWYG html 5 editor summernote added
     meteor add summernote:summernote
+
+Dropzone js sdded for the youtube upload vid function
+    meteor add dbarrett:dropzonejs
